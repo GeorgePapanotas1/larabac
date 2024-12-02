@@ -1,0 +1,40 @@
+{
+    "name": "gpapanotas/larabac",
+    "description": "Fluid Attribute Based Access Control for PHP",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Gpapanotas\\Larabac\\": "src/",
+            "Laravel\\": "Laravel/"
+        }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\": "tests/"
+      }
+    },
+    "authors": [
+        {
+            "name": "George Papanotas",
+            "email": "georgepapanotas1@gmail.com"
+        }
+    ],
+    "require": {
+      "php": "^8.2",
+      "ext-pdo": "*",
+        "illuminate/support": "^10.0 || ^9.0 || ^8.0",
+        "illuminate/database": "^11.34",
+        "illuminate/console": "^11.34"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.4",
+        "mockery/mockery": "^1.6"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Laravel\\PermissioningModuleServiceProvider"
+        ]
+      }
+    }
+}
